@@ -49,6 +49,7 @@ function deleteTask(element) {
 function updateTask() {
     
     let updateValue = prompt("Enter the updated To-Do item:");
+    location.reload()
     console.log(updateValue);
     let tasks = JSON.parse(localStorage.getItem("tasks")) || []
 
